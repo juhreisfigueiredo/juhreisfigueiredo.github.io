@@ -75,29 +75,35 @@ body.portfolio-dark #fh5co-footer a {
   .editorial-credits { margin-bottom: 26px; font-size: 14px; }
   .editorial-divider { width: 90%; margin: 32px auto; }
 }
+
+/* Navegação alinhada à capa nova do portfólio */
+.project-nav-wrap{width:min(1240px,94vw);margin:0 auto 24px;padding:0 0 14px}
+.project-nav{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid rgba(238,233,225,.38);border-bottom:1px solid rgba(238,233,225,.38)}
+.project-nav li{display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-width:110px;padding:10px 13px;border-right:1px solid rgba(238,233,225,.45);text-align:center}
+.project-nav li:last-child{border-right:0}
+.project-nav a{display:block;color:#eee9e1!important;font-family:Georgia,"Times New Roman",serif;font-size:clamp(10px,1.05vw,14px);font-weight:400;line-height:1.35;letter-spacing:.055em;text-decoration:none;text-transform:uppercase}
+.project-nav a:hover,.project-nav a:focus-visible{color:#fff!important;text-decoration:underline;text-underline-offset:4px}
+.project-nav .current a{color:#fff!important}
+.back-cover{display:block;width:max-content;margin:18px auto 12px;color:#d6d0c7!important;font-size:10px;letter-spacing:.16em;text-decoration:none;text-transform:uppercase}
+@media(max-width:700px){.project-nav-wrap{width:96vw;margin-bottom:18px}.project-nav li{flex:1 1 25%;min-width:0;padding:9px 5px;border-bottom:1px solid rgba(238,233,225,.2)}.project-nav li:nth-child(4){border-right:0}.project-nav a{font-size:9px;letter-spacing:.025em}}
+
 </style>
 </head>
 	<body class="portfolio-dark" style="background-color: #242321; color: #eee9e1">
-		<header id="fh5co-header" role="banner">
-			<div class="container text-center">
-				<div id="fh5co-logo">
-					<a href="index.html">
-						<img src="logo.png" style="height: 150px;margin-top: -25px">
-					</a>
-				</div>
-				<nav style="margin-top: -20px">
-					<ul>
-						<li class="active"><a href="producao-moda.html">Produção de Moda</a></li>
-						<li><a href="catalogo.html">Styling para Catálogo</a></li>
-						<li><a href="croquis.html">Croquis</a></li>
-						<li><a href="editorial.html">Editorial</a></li>
-						<!--<li ><a href="projetos.html">Projetos</a></li>-->
-						<li><a href="contato.html">Contato</a></li>
-<!--						<li><a href="https://www.instagram.com/juh_reis20/" target="_blank">Instagram</a></li>-->
-					</ul>
-				</nav>
-			</div>
-		</header>
+<header class="project-nav-wrap" role="banner">
+  <a class="back-cover" href="index.html">← Voltar à capa</a>
+  <nav aria-label="Projetos do portfólio">
+    <ul class="project-nav">
+      <li class="current"><a href="producao-moda.html" aria-current="page">Produção de Moda<br>e Shoot</a></li>
+      <li><a href="styling-catalogos.html">Criação de Styling<br>para Catálogos</a></li>
+      <li><a href="fashion-film.html">Fashion<br>Film</a></li>
+      <li><a href="prototipo.html">Protótipo de uma<br>Marca E-commerce</a></li>
+      <li><a href="croquis-autorais.html">Criação de<br>Croquis Autorais</a></li>
+      <li><a href="o-corvo.html">O Corvo<br>Editorial do TCC</a></li>
+      <li><a href="absono.html">Projeto Autoral<br>“Absono”</a></li>
+    </ul>
+  </nav>
+</header>
 		<div class="container">
 			<hr>
 		</div>
