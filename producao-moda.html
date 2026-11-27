@@ -87,30 +87,34 @@ body.portfolio-dark #fh5co-footer a {
 .back-cover{display:block;width:max-content;margin:18px auto 12px;color:#d6d0c7!important;font-size:10px;letter-spacing:.16em;text-decoration:none;text-transform:uppercase}
 @media(max-width:700px){.project-nav-wrap{width:96vw;margin-bottom:18px}.project-nav li{flex:1 1 25%;min-width:0;padding:9px 5px;border-bottom:1px solid rgba(238,233,225,.2)}.project-nav li:nth-child(4){border-right:0}.project-nav a{font-size:9px;letter-spacing:.025em}}
 
-/* FOTOS COMERCIAIS: legenda centralizada no espaço entre a linha e a foto central */
+/* FOTOS COMERCIAIS: título encaixado no vão entre a linha horizontal e a foto central */
 .commercial-heading-wrap {
-  margin: 34px auto 56px;
+  margin: -10px auto 4px !important;
+  padding: 0;
   text-align: center;
 }
 .commercial-heading {
+  display: block;
   margin: 0 !important;
+  padding: 0;
   color: #f4f0e9;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(28px, 4vw, 68px);
+  font-size: clamp(20px, 2.15vw, 32px);
   font-weight: 400;
-  letter-spacing: .16em;
-  line-height: 1.2;
+  letter-spacing: .12em;
+  line-height: 1.15;
   text-align: center;
 }
 @media (max-width: 767px) {
-  .commercial-heading-wrap { margin: 24px auto 36px; }
+  .commercial-heading-wrap {
+    margin: -8px auto 3px !important;
+  }
   .commercial-heading {
-    font-size: clamp(23px, 7vw, 40px);
-    letter-spacing: .10em;
-    line-height: 1.2;
+    font-size: clamp(16px, 5vw, 25px);
+    letter-spacing: .08em;
+    line-height: 1.15;
   }
 }
-
 </style>
 </head>
 	<body class="portfolio-dark" style="background-color: #242321; color: #eee9e1">
